@@ -36,7 +36,7 @@
 	}
 	
 	if(!empty($_POST['title']) && !empty($_POST['description'])){
-		if($_POST['hstart'] > $_POST['hend'] || $_POST['hstart']+3600 != $_POST['hend']){
+		if($_POST['hstart'] > $_POST['hend']){
 			header('refresh:0');
 		}
 		else{
